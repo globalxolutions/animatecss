@@ -131,7 +131,7 @@ rollOut
 
 ## Other Resources
 
-- There's a [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css
+- There's another [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css
 
 ## Contributing
 
