@@ -1,6 +1,10 @@
 # Animatecss
 
-TODO: Adds animatecss library goodies to your pipeline
+Adds animatecss library goodies to your pipeline.
+
+Live examples could be found at: http://daneden.me/animate/
+
+Animate css is an open source css library developed by: Dan Eden.
 
 ## Installation
 
