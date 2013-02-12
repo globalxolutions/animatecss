@@ -1,6 +1,6 @@
 # Animatecss
 
-TODO: Write a gem description
+TODO: Adds animatecss library goodies to your pipeline
 
 ## Installation
 
