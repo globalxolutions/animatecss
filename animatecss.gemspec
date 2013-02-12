@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ariel@globalxolutions.com"]
   gem.description   = %q{Add animate css goodies to your rails pipeline}
   gem.summary       = %q{Animate Css is an open source library created by: Dan Eden, more info visit: http://daneden.me/animate/}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/globalxolutions/animatecss"
 
   gem.files         = `git ls-files`.split($\)
   #gem.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
