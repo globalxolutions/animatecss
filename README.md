@@ -19,7 +19,11 @@ And then execute:
 Or install it yourself as:
 
     $ gem install animatecss
+    
+Add it to the application.css.scss (Ruby on Rails):
 
+    *= require animate
+    
 ## Usage
 
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
