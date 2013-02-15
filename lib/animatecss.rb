@@ -1,6 +1,9 @@
 require "animatecss/version"
 
 module Animatecss
-  class Engine < Rails::Engine
-	end
+
+  def self.version
+    "Animatecss version #{Animatecss::VERSION}"
+  end
+
 end
