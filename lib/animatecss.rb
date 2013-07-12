@@ -1,9 +1,3 @@
+require "animatecss/engine" if ::Rails.version >= '3.1'
 require "animatecss/version"
 
-module Animatecss
-
-  def self.version
-    "Animatecss version #{Animatecss::VERSION}"
-  end
-
-end
