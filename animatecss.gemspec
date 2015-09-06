@@ -19,9 +19,6 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
 
-  # Rails dependencies
-  gem.add_dependency "railties", ">= 3.2"
-
   # Development Gem dependencies
   gem.add_development_dependency "rails", "~> 4.2.4"
   gem.add_development_dependency "bundler", "~> 1.7"
