@@ -1,4 +1,6 @@
-# Animatecss
+# Animatecss 
+
+### <a href="https://travis-ci.org/globalxolutions/animatecss"><img src="https://travis-ci.org/globalxolutions/animatecss.svg?branch=master"></a>
 
 Adds animatecss library goodies to your pipeline.
 
