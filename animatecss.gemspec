@@ -12,15 +12,26 @@ Gem::Specification.new do |gem|
   gem.name          = "animatecss"
   gem.version       = Animatecss::VERSION
   gem.platform      = Gem::Platform::RUBY
-  gem.add_development_dependency "rspec", "~> 2.12.0"
-  gem.add_development_dependency "capybara", "~> 1.1.3"
-  gem.add_dependency "railties", ">= 3.2", "< 5.0"
+  gem.add_dependency "railties", ">= 3.0", "< 6.0"
   gem.required_rubygems_version = ">= 1.3.6"
   gem.rubyforge_project = "animatecss"
 
   gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
+
+  # Rails dependencies
+  gem.add_dependency "rails", "~> 4.2.4"
+
+  # Development Gem dependencies
+  gem.add_development_dependency "bundler", "~> 1.7"
+  gem.add_development_dependency "rake", "~> 10.0"
+  gem.add_development_dependency "rspec-rails", "~> 3.2"
+  gem.add_development_dependency "capybara", "~> 2.5.0"
+  gem.add_development_dependency "capybara-webkit"
+  gem.add_development_dependency "sqlite3"
+  gem.add_development_dependency "pry-rails"
+
   # gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.require_path = "lib"
-end
 
+end

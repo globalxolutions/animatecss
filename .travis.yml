@@ -1,0 +1,8 @@
+language: ruby
+sudo: false
+script: 'bundle exec rspec'
+rvm:
+  - 2.2.3
+  - ruby-head
+addons:
+  sqlite3: "sqlite3"

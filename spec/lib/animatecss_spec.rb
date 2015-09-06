@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Animatecss do
-  it 'should return correct version string' do
-    Animatecss.version.should == "Animatecss version #{Animatecss::VERSION}"
+  it 'should return the version string' do
+    expect(Animatecss::VERSION).to eq("#{Animatecss::VERSION}")
   end
 end

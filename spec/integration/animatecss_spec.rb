@@ -1,11 +1,9 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'spec_helper'
+require 'rails_helper'
 
-describe Animatecss do
+describe Animatecss, type: :feature do
   it "should have the css files on the assets pipeline" do
-    pending 'learning how to test this'
-    # visit "/assets/animate.css"
-    # response.status.should be(200) 
+    visit "/assets/animate.css"
+    save_and_open_page
+    expect(page.status_code).to eq(200)
   end
 end
