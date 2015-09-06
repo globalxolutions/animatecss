@@ -32,4 +32,3 @@ spec/dummy/tmp/*
 **.orig
 rerun.txt
 pickle-email-*.html
->>>>>>> bbf65d95f60c173d6849e4384a488ab6c254849c
