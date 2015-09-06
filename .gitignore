@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *.gem
 *.rbc
 .bundle
@@ -17,18 +16,17 @@ test/tmp
 test/version_tmp
 tmp
 .DS_Store
-=======
-*.rbc
 *.sassc
 .sass-cache
 capybara-*.html
-.rspec
 /.bundle
 /vendor/bundle
 /log/*
 /tmp/*
 /db/*.sqlite3
 /public/system/*
+spec/dummy/log/*
+spec/dummy/tmp/*
 /coverage/
 /spec/tmp/*
 **.orig
