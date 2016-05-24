@@ -3,6 +3,7 @@ sudo: false
 script: 'bundle exec rspec'
 rvm:
   - 2.2.3
-  - ruby-head
+  - 2.2.4
+  - 2.3.0
 addons:
   sqlite3: "sqlite3"
