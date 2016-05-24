@@ -1,4 +1,4 @@
-# Animatecss 
+# Animatecss
 
 ### <a href="https://travis-ci.org/globalxolutions/animatecss"><img src="https://travis-ci.org/globalxolutions/animatecss.svg?branch=master"></a>
 
@@ -21,11 +21,14 @@ And then execute:
 Or install it yourself as:
 
     $ gem install animatecss
-    
+
 Add it to the application.css.scss (Ruby on Rails):
 
     *= require animate
-    
+
+Add it to your application.js
+    //= require animatecss
+
 ## Usage
 
 To use animate.css in your app, add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
@@ -34,6 +37,8 @@ You can do a whole bunch of other stuff with animate.css when you combine it wit
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
+or
+$('#yourElement').animateCss('bounce');
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays!

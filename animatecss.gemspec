@@ -13,6 +13,7 @@ Gem::Specification.new do |gem|
   gem.version       = Animatecss::VERSION
   gem.platform      = Gem::Platform::RUBY
   gem.add_dependency "railties", ">= 3.0", "< 6.0"
+  gem.add_dependency "jquery-rails"
   gem.required_rubygems_version = ">= 1.3.6"
   gem.rubyforge_project = "animatecss"
 
@@ -21,6 +22,8 @@ Gem::Specification.new do |gem|
 
   # Development Gem dependencies
   gem.add_development_dependency "rails", "~> 4.2.4"
+  gem.add_development_dependency 'coffee-rails'
+  gem.add_development_dependency 'jquery-rails'
   gem.add_development_dependency "bundler", "~> 1.7"
   gem.add_development_dependency "rake", "~> 10.0"
   gem.add_development_dependency "rspec-rails", "~> 3.2"
