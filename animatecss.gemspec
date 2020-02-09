@@ -21,13 +21,14 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {spec}/*`.split("\n")
 
   # Development Gem dependencies
-  gem.add_development_dependency "rails", "~> 4.2.4"
+  gem.add_development_dependency "bundler", ">= 1.7" 
+  gem.add_development_dependency "rails", ">= 4.2.4", "< 7.0"
   gem.add_development_dependency 'coffee-rails'
-  gem.add_development_dependency "bundler", "~> 1.7"
   gem.add_development_dependency "rake", "~> 10.0"
   gem.add_development_dependency "rspec-rails", "~> 3.2"
   gem.add_development_dependency "capybara", "~> 2.5.0"
-  gem.add_development_dependency "capybara-webkit"
+  gem.add_development_dependency 'selenium-webdriver'
+  gem.add_development_dependency 'webdrivers'
   gem.add_development_dependency "sqlite3"
   gem.add_development_dependency "pry-rails"
 
