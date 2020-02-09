@@ -5,7 +5,7 @@ require File.expand_path('../../spec/dummy/config/environment', __FILE__)
 require 'rspec/rails'
 require 'capybara/rails'
 require 'selenium-webdriver'
-require 'chromedriver-helper'
+require 'webdrivers'
 require 'pry'
 
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -31,21 +31,21 @@ ENGINE_RAILS_ROOT=File.join(File.dirname(__FILE__), '../')
 RSpec.configure do |config|
 
   Capybara.register_driver :chrome do |app|
-    Capybara::Selenium::Driver.new(app, browser: :chrome)
+    Capybara::Selenium::Driver.new(app, browser: :webdrivers)
   end
 
-  Capybara.register_driver :headless_chrome do |app|
+  Capybara.register_driver :webdrivers do |app|
     caps = Selenium::WebDriver::Remote::Capabilities.chrome(loggingPrefs: { browser: 'ALL' })
     opts = Selenium::WebDriver::Chrome::Options.new
 
     chrome_args = %w[--headless --window-size=1920,1080 --no-sandbox --disable-dev-shm-usage]
     chrome_args.each { |arg| opts.add_argument(arg) }
-    Capybara::Selenium::Driver.new(app, browser: :chrome, options: opts, desired_capabilities: caps)
+    Capybara::Selenium::Driver.new(app, browser: :webdrivers, options: opts, desired_capabilities: caps)
   end
 
   Capybara.configure do |config|
     # change this to :chrome to observe tests in a real browser
-    config.javascript_driver = :headless_chrome
+    config.javascript_driver = :webdrivers
   end
   
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
