@@ -27,7 +27,7 @@ Add it to the application.css.scss (Ruby on Rails):
     *= require animate
 
 Add it to your application.js
-    //= require animatecss
+    //= require animate
 
 ## Usage
 
