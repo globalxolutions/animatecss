@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.name          = "animatecss"
   gem.version       = Animatecss::VERSION
   gem.platform      = Gem::Platform::RUBY
-  gem.add_dependency "bundler", ">= 1.7", "< 2.0" 
+  gem.add_dependency "bundler", "~> 1.17.2" 
   gem.add_dependency "railties", ">= 3.0", "< 6.0"
   gem.add_dependency "jquery-rails", ">= 0"
   gem.required_rubygems_version = ">= 1.3.6"
