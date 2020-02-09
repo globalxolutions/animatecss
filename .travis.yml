@@ -2,8 +2,11 @@ language: ruby
 sudo: false
 script: 'bundle exec rspec'
 rvm:
-  - 2.2.3
-  - 2.2.4
-  - 2.3.7
+  - 2.3.8
+  - 2.4.9
+  - 2.5.7
+  - 2.6.5
+  - 2.7.0
+
 addons:
   sqlite3: "sqlite3"
